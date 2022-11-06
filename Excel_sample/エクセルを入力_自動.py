@@ -1,16 +1,10 @@
-# 参考
-# https://lemon818.com/pythop-excel/
-# Python で Excel ファイルを読み込む方法．
-
-import openpyxl as excel
+import openpyxl as xl
 import os
 
-#カレントディレクトリを現在のディレクトリに移動
-#https://note.nkmk.me/python-script-file-path/
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-wbname = "test.xlsx"
-wb = excel.load_workbook(wbname)
+wbname = "excel_input/1.xlsx"
+wb = xl.load_workbook(wbname)
 
 # シート単位にループ
 for sheet in wb.sheetnames: 
