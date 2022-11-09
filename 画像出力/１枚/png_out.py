@@ -14,4 +14,4 @@ plt.plot(x, y, color = "k", marker = "o", label = "Array elements")
 dirname = "soma"
 os.makedirs(dirname, exist_ok = True)
 #pngで保存（sekiokaフォルダ）
-plt.savefig(".\\" + dirname + "\\" + str(dirname) + ".png")
+plt.savefig(dirname + "/" + str(dirname) + ".png")
